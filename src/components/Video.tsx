@@ -3,38 +3,10 @@ import { CaretRight, DiscordLogo, FileArrowDown, FrameCorners, Lightning } from 
 import { gql, useQuery } from "@apollo/client";
 
 import '@vime/core/themes/default.css';
+import { useGetLessonBySlugQuery } from "../graphql/generated";
 
 
 
-const GET_LESSONS_BY_SLUG_QUERY = gql`
-
-query GetLessonBySlug($slug:String) {
-    lesson(where: {slug: $slug}) {
-      title
-      videoId
-      description
-        teacher {
-          bio
-          avatarURL
-          name
-      }
-    }
-  }
-
-`
-interface GetLessonsSlugResponse{
-    
-    lesson:{
-    title: string;
-      videoId: string; 
-      description: string;
-        teacher: {
-          bio: string;
-          avatarURL: string;
-          name: string;
-        }
-    }
-}
 
 interface VideoProps{
 
@@ -44,13 +16,13 @@ interface VideoProps{
 
 export function Video(props: VideoProps) {
 
-const{data} = useQuery<GetLessonsSlugResponse>(GET_LESSONS_BY_SLUG_QUERY,{
+const{data} = useGetLessonBySlugQuery({
     variables:{
         slug: props.lessonSlug,
     }
 })
 
-if(!data){
+if(!data || !data.lesson){
     return (
         <div className="flex-1">
             <p>Carregando...</p>
@@ -80,6 +52,8 @@ if(!data){
                         {data.lesson.description}
                         </p>
 
+
+                        {data.lesson.teacher &&(
                         <div className="flex items-center gap-4 mt-6">
                             <img
                                 className="h-16 w-16 rounded-full border-2 border-orange-500"
@@ -91,6 +65,7 @@ if(!data){
                                 <span className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</span>
                             </div>
                         </div>
+                        )}
                     </div>
 
 
