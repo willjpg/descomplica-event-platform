@@ -1,4 +1,4 @@
-query getLessons{
+query get{
     lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
       id
       lessonType
