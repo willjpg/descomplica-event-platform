@@ -31,8 +31,8 @@ Construction of a Event platform using React, a project developed at Rocketseat'
 <H2 id="preview">🖼️ Preview</H2>
 
 <section align="center">
-    <img height="210em" alt="My games website overview" src="https://imgur.com/uW2842e.png"/>
-    <img height="210em" alt="My games website overview" src="https://i.imgur.com/ITzd4eb.png"/>
+    <img  alt="My games website overview" src="https://imgur.com/uW2842e.png"/>
+    <img  alt="My games website overview" src="https://i.imgur.com/ITzd4eb.png"/>
     
 </section>
 
