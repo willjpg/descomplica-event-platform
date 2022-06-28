@@ -22,6 +22,11 @@
 
 Construction of a Event platform using React, a project developed at Rocketseat's Ignite Lab week.
 
+<p>
+    <h3><a href="https://ignite-lab-willjpg.vercel.app/">Access the platform &rarr;</a></h3>
+</p>
+
+
 <!-- <p>
     <h3><a href="">Check website &rarr;</a></h3>
 </p> -->
@@ -31,8 +36,8 @@ Construction of a Event platform using React, a project developed at Rocketseat'
 <H2 id="preview">🖼️ Preview</H2>
 
 <section align="center">
-    <img  alt="My games website overview" src="https://imgur.com/uW2842e.png"/>
-    <img  alt="My games website overview" src="https://i.imgur.com/ITzd4eb.png"/>
+    <img  alt="My Event website overview" src="https://imgur.com/uW2842e.png"/>
+    <img  alt="My Event website overview" src="https://i.imgur.com/ITzd4eb.png"/>
     
 </section>
 
