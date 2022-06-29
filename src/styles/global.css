@@ -7,21 +7,21 @@
 } outra forma de colocar css no App.tsx */
 
 body{
-    @apply bg-gray-900 text-gray-100;
+    @apply bg-gray-100 text-gray-900;
     -webkit-font-smoothing: antialiased;
-
+    
 }
 
 ::-webkit-scrollbar{
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    @apply bg-gray-500;
+    @apply bg-gray-200;
 }
 ::-webkit-scrollbar-thumb {
-    @apply bg-black rounded;
+    @apply bg-gray-300 rounded;
 }
-/*  CMS=Content Management System 
+/*  CMS=Content Mana11gement System 
 
 Traz tanto o painel de ADMIN tanto quanto a parte visual do front-end (temas)
 

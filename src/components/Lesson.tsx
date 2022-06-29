@@ -12,59 +12,70 @@ interface LessonProps {
    type: 'live' | 'class';
 }
 
-export function Lesson(props: LessonProps) {
-
-   const{slug} = useParams<{ slug: string }>()
-
-
-   const isLessonAvailable = isPast(props.availableAt);
-   const availableDateFormatted = format(props.availableAt, "EEEE' • 'd' de 'MMMM' • 'k'h'mm", {
-      locale: ptBR
-   })
-
-   const isActiveLesson = slug === props.slug;
-
-   return (
-      <Link to={`/event/lesson/${props.slug}`} className="group">
-
-         <span className="text-gray-300">
-            {availableDateFormatted}
-         </span>
-
-         <div className={`rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500 ${isActiveLesson ? 'bg-green-500': ''}`}>
-            <header className="flex items-center justify-between">
-               {isLessonAvailable ? (
-                  <span className={classNames('text-sm font-medium flex items-cneter gap-2"',{
-                      'text-white': isActiveLesson,
-                      'text-blue-500': !isActiveLesson
-                  })}>
-                     <CheckCircle size={20} />
-                     Conteúdo liberado
-                  </span>) : (
-
-                  <span className="text-sm text-orange-500 font-medium flex items-cneter gap-2">
-                     <Lock size={20} />
-                     Em breve
-                  </span>
-               )}
-
-               <span className={classNames('text-xs rounded py-[0.125rem] px-2 text-white border ',{
-                  'border-white': isActiveLesson,
-                  'border-green-300': !isActiveLesson,
-               })}>
-                  {props.type === 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
-               </span>
-            </header>
-
-            <strong className={classNames('mt-5 block',{
-               'text-white': isActiveLesson,
-               'text-gray-200': !isActiveLesson
-            })}>
-               {props.title}
-            </strong>
-         </div>
-      </Link>
-
+export function Lesson({ title, slug, availableAt, type }: LessonProps) {
+   const { slug: slugRef } = useParams<{ slug: string }>()
+   const isAvailable = isPast(availableAt)
+   const availableDateFormatted = format(
+     availableAt,
+     "EEE' • 'd' de 'MMMM' • 'k'h'mm",
+     {
+       locale: ptBR
+     }
    )
 
-}
+   
+   return (
+      <Link
+        to={isAvailable ? `/event/lesson/${slug}` : ''}
+        className={`${!isAvailable && 'cursor-not-allowed'} group`}
+      >
+        <span className="text-gray-300">{availableDateFormatted}</span>
+  
+        <div
+          className={`${
+            slugRef &&
+            slugRef === slug &&
+            'border-transparent bg-green-400 before:bg-green-400 '
+          } relative mt-2 rounded border border-gray-200 p-4 transition-[border] before:absolute before:left-[-7px] before:top-1/2 before:z-10 before:-mt-2 before:h-[14px] before:w-[14px] before:rotate-45 before:rounded-[2px] before:content-[""] ${
+            !isAvailable
+              ? 'group-hover:border-gray-600'
+              : 'group-hover:border-green-400'
+          }`}
+        >
+          <header className="flex justify-between">
+            {isAvailable ? (
+              <span
+                className={`${
+                  slugRef && slugRef === slug ? 'text-black' : 'text-green-400'
+                } flex items-center gap-2 text-sm font-medium`}
+              >
+                <CheckCircle size={20} />
+                Conteúdo liberado
+              </span>
+            ) : (
+              <span className="flex items-center gap-2 text-sm font-medium text-orange-500">
+                <Lock size={20} />
+                Em breve
+              </span>
+            )}
+  
+            <span
+              className={`${
+                slugRef && slugRef === slug ? 'border-green-500' : 'border-green-400'
+              } flex items-center rounded border px-2 py-[0.125rem] text-xs font-bold uppercase text-black`}
+            >
+              {type === 'live' ? 'Ao vivo' : 'Aula prática'}
+            </span>
+          </header>
+  
+          <p
+            className={`mt-4 font-bold ${
+              slugRef && slugRef === slug ? 'text-black' : 'text-gray-600'
+            }`}
+          >
+            {title}
+          </p>
+        </div>
+      </Link>
+    )
+  }

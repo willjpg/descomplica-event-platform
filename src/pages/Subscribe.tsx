@@ -1,5 +1,5 @@
 import { gql, useMutation } from "@apollo/client";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
@@ -13,31 +13,41 @@ export function Subscribe() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
-  const [createSubscriber, { loading }] = useCreateSubscriberMutation()
+  const [createSubscriber, { loading, error, data }] =
+    useCreateSubscriberMutation()
 
+
+  const alreadySubscribe = localStorage.getItem('subscribed')
+
+  useEffect(() => {
+
+      localStorage.setItem('subscribed', 'true')
+
+      
+    
+  }, )
 
   async function handleSubscribe(event: FormEvent) {
     event?.preventDefault();
 
 
-    await createSubscriber({
-      variables: {
-        name,
-        email,
-      }
-
-    })
-
-    navigate('/event')
-  }
+     if (name.trim() !== '' && email.trim() !== '') {
+      await createSubscriber({
+        variables: {
+          name,
+          email
+        }
+      })
+     }}
 
 
 
   return (
-    <div className="min-h-screen bg-white bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="flex-col w-[1300px] rounded-3xl mt-8">
-        <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-          <div className="mb-6 max-w-[640px]">
+    <>
+    <main className="min-h-screen bg-white bg-cover bg-no-repeat flex flex-col items-center">
+      <div className="mx-auto mt-10 flex w-full max-w-[1100px] flex-col items-center justify-between gap-8 lg:mt-32 lg:flex-row lg:gap-0">
+        <div className="flex w-full max-w-[312px] flex-col items-center justify-center md:max-w-[512px] lg:max-w-[640px] lg:items-start">
+          
             <Logo />
 
             <h1 className="font-league font-bold text-black mt-8 text-[3.5rem] leading-tight">
@@ -47,22 +57,24 @@ export function Subscribe() {
             <p className="font-bold mt-4 text-gray-700 leading-relaxed">Em apenas uma semana você será integrado a metodologia descomplica com desafios e prática com questões dos pincipais vestibulares do país para conquistar a tão sonhada vaga.</p>
 
           </div>
-          <div className="pl-2 bg-black  rounded-3xl mb-8">
-            <div className="p-8 bg-gray-100 border border-gray-100 rounded-3xl mb-7">
+          <div className="pl-2 bg-black  rounded-3xl mb-8 ">
+            <div className="p-8 bg-gray-100 border border-gray-100 rounded-3xl mb-7 lg:p-8">
+            {!alreadySubscribe ? (
+              <>
               <strong className="text-2xl mb-6 block text-black">Inscreva-se gratuitamente</strong>
 
 
 
               <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
                 <input
-                  className="bg-black rounded-3xl px-5 h-14"
+                  className="bg-gray-200 rounded-3xl px-5 h-14"
                   type="text"
                   placeholder="Seu nome completo"
                   onChange={event => setName(event.target.value)}
                 />
 
                 <input
-                  className="bg-black rounded-3xl px-5 h-14"
+                  className="bg-gray-200 rounded-3xl px-5 h-14"
                   type="email"
                   placeholder="digite seu e-mail"
                   onChange={event => setEmail(event.target.value)}
@@ -80,10 +92,24 @@ export function Subscribe() {
                 </button>
 
               </form>
+              </>
+            ) : (
+              <div className="flex w-full flex-col gap-2">
+                <span className="mb-6 block text-2xl font-bold text-gray-900">
+                  Você está inscrito!
+                </span>
+                <button
+                  className="mt-4 h-14 rounded-3xl bg-green-400 py-4 text-sm font-bold uppercase text-white transition-colors hover:bg-green-500 disabled:opacity-50"
+                  onClick={() => navigate('/event/lesson/abertura-do-evento-desco-aprova')}
+                >
+                  Ir para o evento
+                </button>
+              </div>
+            )}
             </div>
           </div>
         </div>
-      </div>
+      
 
       <img
         src="https://i.imgur.com/iESz3Jv.png"
@@ -107,7 +133,7 @@ export function Subscribe() {
         
       </div>
 
-    </div>
-
+    </main>
+    </>
   )
 }

@@ -2,21 +2,22 @@
 
 module.exports = {
   content: [
-    './src/**/*.tsx' //todos arquivos do src que terminarem com tsx terão estilizaçao do tailwind
+    'index.html', './src/**/*.{js,jsx,ts,tsx,vue,html}' //todos arquivos do src que terminarem com tsx terão estilizaçao do tailwind
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        
+      backgroundImage: {
+
       },
-      fontFamily:{
+      fontFamily: {
         sans: 'Roboto, sans-serif',
         league: 'League Gothic, sans-serif',
 
       },
-      colors:{
+      colors: {
         green: {
           300: '#00B37E',
+          400: '#00E88F',
           500: '#00875F',
           700: '#015F43',
         },
@@ -37,9 +38,24 @@ module.exports = {
           600: '#29292E',
           700: '#121214',
           900: '#09090A'
+        },
+        animation: {
+          slide: '0.3s ease-in-out 0s 1 normal none running slide'
+        },
+
+        keyframes: {
+          slide: {
+            '0%, 100%': {
+              transform: 'translateX(100%)'
+            },
+
+            '100%': {
+              transform: 'translateX(0)'
+            }
+          }
         }
-      },
-    },
+      }
+    }
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')]
 }
