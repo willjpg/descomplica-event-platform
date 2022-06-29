@@ -1,7 +1,7 @@
 
 
 <section align="center">
-    <a href="https://imgur.com/1fc1pD1"><img src="https://i.imgur.com/1fc1pD1.png" title="source: imgur.com" /></a>
+    <a href=""><img src="" title="source: imgur.com" /></a>
 </section>
 
 ---
@@ -20,10 +20,17 @@
 
 <H2 id="about">📙 About</H2>
 
-Construction of a Event platform using React, a project developed at Rocketseat's Ignite Lab week.
+Uma platarforma de eventos do Descomplica.
+
+A ideia veio com a semana de imersao ReactJs no ignite lab da Rockeseat.
+
+Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em uma universidade, gosto muito de todos os professores e todo o ecossistema deles.
+Esse projeto foi uma forma de homenagem e aprendizado, me motivou muito mais construir e aperfeiçoar sendo algo com a cara deles.
+
+E graças ao Descomplica e seus professores incriveis passei em uma Federal 😊
 
 <p>
-    <h3><a href="https://ignite-lab-willjpg.vercel.app/">Access the platform &rarr;</a></h3>
+    <h3><a href="https://eventodescomplica.willjpg.vercel.app/">Entre na Plataforma &rarr;</a></h3>
 </p>
 
 
@@ -36,8 +43,8 @@ Construction of a Event platform using React, a project developed at Rocketseat'
 <H2 id="preview">🖼️ Preview</H2>
 
 <section align="center">
-    <img  alt="My Event website overview" src="https://imgur.com/uW2842e.png"/>
-    <img  alt="My Event website overview" src="https://i.imgur.com/ITzd4eb.png"/>
+    <img  alt="My Event website overview" src=""/>
+    <img  alt="My Event website overview" src=""/>
     
 </section>
 
@@ -45,7 +52,8 @@ Construction of a Event platform using React, a project developed at Rocketseat'
 
 <H2 id="layout">🎨 Layout</H2>
 
-You can view the layout of the project through [this link](https://www.figma.com/community/file/1120711251998877938). You need an account on [Figma](http://figma.com/) to access it.
+Você pode ver o layout da plataforma no Figma [aqui](https://www.figma.com/file/ptjsbGNFiJPxI1wK5J0lOf/Plataforma-de-Evento-Descomplica?node-id=0%3A1). Pode ser que ainda não esteja na sua versão final hehe.
+
 
 ---
 <H2 id="run">🚀 Run Project</H2>
