@@ -94,7 +94,7 @@ export function Subscribe() {
 
                   type="submit"
                   disabled={loading}
-                  className="mt-4 bg-green-500 uppercase py-4 rounded-3xl font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                  className="mt-4 bg-green-400 uppercase py-4 rounded-3xl font-bold text-sm hover:bg-black text-white transition-colors disabled:opacity-50"
                 >
 
                   Garatir minha vaga
@@ -106,13 +106,13 @@ export function Subscribe() {
             ) : (
               <div className="flex w-full flex-col gap-2">
                 <span className="mb-6 block text-2xl font-bold text-gray-900">
-                  Você está inscrito!
+                  Você já está dentro!
                 </span>
                 <button
-                  className="mt-4 h-14 rounded-3xl bg-green-400 py-4 text-sm font-bold uppercase text-white transition-colors hover:bg-green-500 disabled:opacity-50"
+                  className="mt-4 h-14 rounded-3xl bg-green-400 py-4 text-sm font-bold uppercase text-gray-700 transition-colors hover:bg-black hover:text-white disabled:opacity-50"
                   onClick={() => navigate('/event/lesson/abertura-do-evento-desco-aprova')}
                 >
-                  Ir para o evento
+                  Acessar Aulas
                 </button>
               </div>
             )}

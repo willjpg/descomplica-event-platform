@@ -1,5 +1,5 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
-import { CaretRight, CircleNotch, DiscordLogo, FileArrowDown, FrameCorners, Lightning } from "phosphor-react";
+import { CaretRight, CircleNotch, DiscordLogo, FileArrowDown, FrameCorners, Image, Lightning } from "phosphor-react";
 
 
 import '@vime/core/themes/default.css';
@@ -65,7 +65,7 @@ export function Video(props: VideoProps) {
                                     alt="" />
 
                                 <div className="leading-relaxed">
-                                    <strong className="font-bold text-2xl block">{data.lesson.teacher.name}</strong>
+                                    <strong className="font-bold text-xl block">{data.lesson.teacher.name}</strong>
                                     <span className="text-gray-800 text-sm block">{data.lesson.teacher.bio}</span>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ export function Video(props: VideoProps) {
                     <a href="https://www.google.com.br/search?q=wallpaper+descomplica&ie=UTF-8&oe=" className="bg-white rounded overflow-hidden flex items-stretch gap-6 shadow-2xl shadow-gray-200 hover:bg-gray-400 transition-colors">
 
                         <div className="bg-green-400 h-full p-6 flex items-center">
-                            <FrameCorners size={40} />
+                            <Image size={40} />
                         </div>
                         <div className="py-6 leading-relaxed">
                             <strong className="text-2xl">Wallpapers exclusivos</strong>
