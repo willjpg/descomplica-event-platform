@@ -20,14 +20,13 @@
 
 <H2 id="about">📙 About</H2>
 
-Uma platarforma de eventos do Descomplica.
+Uma plataforma de eventos do Descomplica.
 
-A ideia veio com a semana de imersao ReactJs no ignite lab da Rockeseat.
+A ideia veio com a semana de imersão ReactJs no ignite lab da Rockeseat.
 
-Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em uma universidade, gosto muito de todos os professores e todo o ecossistema deles.
-Esse projeto foi uma forma de homenagem e aprendizado, me motivou muito mais construir e aperfeiçoar sendo algo com a cara deles.
+Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em uma universidade, gosto muito de todos os professores e todo o ecossistema deles. Esse projeto foi uma forma de homenagem e aprendizado, me motivou muito mais construir e aperfeiçoar sendo algo com a cara deles.
 
-E graças ao Descomplica e seus professores incriveis passei em uma Federal 😊
+E graças ao Descomplica e seus professores incríveis passei em uma Federal 😊
 
 <p>
     <h3><a href="https://eventodescomplica.willjpg.vercel.app/">Entre na Plataforma &rarr;</a></h3>
