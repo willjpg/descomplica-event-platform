@@ -16,76 +16,96 @@ export function Subscribe() {
   const [createSubscriber, { loading }] = useCreateSubscriberMutation()
 
 
-  async function handleSubscribe(event: FormEvent){
-      event?.preventDefault();
+  async function handleSubscribe(event: FormEvent) {
+    event?.preventDefault();
 
 
-      await createSubscriber({
-        variables:{
-          name,
-          email,
-        }
+    await createSubscriber({
+      variables: {
+        name,
+        email,
+      }
 
-      })
+    })
 
-      navigate('/event')
+    navigate('/event')
   }
 
-  
+
 
   return (
-    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-        <div className="max-w-[640px]">
-          <Logo />
+    <div className="min-h-screen bg-white bg-cover bg-no-repeat flex flex-col items-center">
+      <div className="flex-col w-[1300px] rounded-3xl mt-8">
+        <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
+          <div className="mb-6 max-w-[640px]">
+            <Logo />
 
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
-            Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong> JS
-          </h1>
+            <h1 className="font-league font-bold text-black mt-8 text-[3.5rem] leading-tight">
+              SUA <strong className="text-green-400">APROVAÇÃO</strong> COMPLETA SE INÍCIA AQUI, <strong className="text-green-400">DO ZERO</strong>, COM DESCOMPLICA
+            </h1>
 
-          <p className="mt-4 text-gray-200 leading-relaxed">Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.</p>
+            <p className="font-bold mt-4 text-gray-700 leading-relaxed">Em apenas uma semana você será integrado a metodologia descomplica com desafios e prática com questões dos pincipais vestibulares do país para conquistar a tão sonhada vaga.</p>
 
-        </div>
+          </div>
+          <div className="pl-2 bg-black  rounded-3xl mb-8">
+            <div className="p-8 bg-gray-100 border border-gray-100 rounded-3xl mb-7">
+              <strong className="text-2xl mb-6 block text-black">Inscreva-se gratuitamente</strong>
 
-        <div className="p-8 bg-gray-700 border border-gray-500 rounded">
-          <strong className="text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
 
-          <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
-            <input
-            className="bg-gray-900 rounded px-5 h-14" 
-            type="text" 
-            placeholder="Seu nome completo"
-            onChange={event => setName(event.target.value)}
-            />
-            
-            <input
-            className="bg-gray-900 rounded px-5 h-14" 
-            type="email" 
-            placeholder="digite seu e-mail"
-            onChange={event => setEmail(event.target.value)}
-            />
-            
-            <button 
-            
-            type="submit"
-            disabled={loading}
-            className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
-            >
-            
-              Garatir minha vaga
 
-            </button>
+              <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
+                <input
+                  className="bg-black rounded-3xl px-5 h-14"
+                  type="text"
+                  placeholder="Seu nome completo"
+                  onChange={event => setName(event.target.value)}
+                />
 
-          </form>
+                <input
+                  className="bg-black rounded-3xl px-5 h-14"
+                  type="email"
+                  placeholder="digite seu e-mail"
+                  onChange={event => setEmail(event.target.value)}
+                />
+
+                <button
+
+                  type="submit"
+                  disabled={loading}
+                  className="mt-4 bg-green-500 uppercase py-4 rounded-3xl font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                >
+
+                  Garatir minha vaga
+
+                </button>
+
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
       <img
-        src="https://i.imgur.com/19spVjX.png"
-        className="mt-10"
+        src="https://i.imgur.com/iESz3Jv.png"
+        className="mt-5"
         alt="Fundo da pagina"
       />
-
+      <img
+        src="https://i.imgur.com/0DuhkpM.png"
+        className=""
+        alt="Fundo da pagina"
+      />
+      <div className="pl-8 w-full py-5 flex items-center justify-between bg-white border-t border-gray-400">
+        
+        <Logo/> 
+        <h1 className="pl-8 text-gray-400">Todos os direiros resevados
+        </h1>
+        <div>
+        <h1 className="pr-8 text-gray-400">Politicas de provacidade
+        </h1>
+        </div>
+        
+      </div>
 
     </div>
 
