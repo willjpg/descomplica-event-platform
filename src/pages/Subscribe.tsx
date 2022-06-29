@@ -20,12 +20,22 @@ export function Subscribe() {
   const alreadySubscribe = localStorage.getItem('subscribed')
 
   useEffect(() => {
+    if (error) {
+      
+    }
+    if (loading) {
+      
+    }
+    if (data) {
+      
 
       localStorage.setItem('subscribed', 'true')
 
-      
-    
-  }, )
+      setTimeout(() => {
+        navigate('/event/lesson/abertura-do-evento-desco-aprova')
+      }, 1000)
+    }
+  }, [data, loading, error])
 
   async function handleSubscribe(event: FormEvent) {
     event?.preventDefault();
