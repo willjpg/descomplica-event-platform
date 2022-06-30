@@ -64,10 +64,10 @@ export function Subscribe() {
               SUA <strong className="text-green-400">APROVAÇÃO</strong> COMPLETA SE INÍCIA AQUI, <strong className="text-green-400">DO ZERO</strong>, COM DESCOMPLICA
             </h1>
 
-            <p className="font-bold mt-4 text-gray-700 leading-relaxed">Em apenas uma semana você será integrado a metodologia descomplica com desafios e prática com questões dos pincipais vestibulares do país para conquistar a tão sonhada vaga.</p>
+            <p className="font-bold mt-4 text-gray-700 leading-relaxed">Em apenas uma semana você será integrado a metodologia descomplica com desafios e prática com questões dos principais vestibulares do país para conquistar a tão sonhada vaga.</p>
 
           </div>
-          <div className="pl-2 bg-black  rounded-3xl mb-8 ">
+          <div className="pl-2 bg-black shadow-lg  rounded-3xl mb-8 ">
             <div className="p-8 bg-gray-100 border border-gray-100 rounded-3xl mb-7 lg:p-8">
             {!alreadySubscribe ? (
               <>
