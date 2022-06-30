@@ -6,7 +6,7 @@
 
 ---
 
-<h2 align="center">Summary</h2>
+<h2 align="center">Resumo</h2>
 
 <p align="center">
     <a href="#about">📙 Sobre</a>
@@ -22,11 +22,13 @@
 
 Uma plataforma de eventos do Descomplica.
 
-A ideia veio com a semana de imersão ReactJs no ignite lab da Rockeseat.
+A ideia veio com a semana de imersão ReactJs no ignite lab da Rocketseat.
 
-Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em uma universidade, gosto muito de todos os professores e todo o ecossistema deles. Esse projeto foi uma forma de homenagem e aprendizado, me motivou muito mais construir e aperfeiçoar sendo algo com a cara deles.
+Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em uma universidade, gosto muito de todos os professores e todo o ecossistema deles. 
+Esse projeto foi uma forma de homenagem e aprendizado, me motivou muito mais construir e aperfeiçoar sendo algo com a cara deles.
 
-E graças ao Descomplica e seus professores incríveis passei em uma Federal 😊
+E graças ao Descomplica e seus professores incríveis passei em uma Federal. 😊
+
 
 <p>
     <h3><a href="https://eventodescomplica.willjpg.vercel.app/" target={'_blank'}>Entre na Plataforma &rarr;</a></h3>
@@ -36,6 +38,8 @@ E graças ao Descomplica e seus professores incríveis passei em uma Federal �
 <!-- <p>
     <h3><a href="">Check website &rarr;</a></h3>
 </p> -->
+
+Não se esqueça de ver o rascunho do site pelo [Figma](https://www.figma.com/file/ptjsbGNFiJPxI1wK5J0lOf/Plataforma-de-Evento-Descomplica?node-id=0%3A1).
 
 ---
 
@@ -82,9 +86,10 @@ Você pode ver o layout da plataforma no [Figma](https://www.figma.com/file/ptjs
 <H2 id="run">🚀 Rodar a aplicação</H2>
 
 ```shell
-  git clone https://github.com/willjpg
+  git clone https://github.com/willjpg/descomplica-event-platform.git
   
-  cd ignite-lab 
+  cd descomplica-event-platform 
+  
   yarn or npm run dev
   yarn dev or npm run dev
   # after the app is running, you can acess it on the browser with the following link:
