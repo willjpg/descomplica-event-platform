@@ -1,7 +1,7 @@
 
 
 <section align="center">
-    <a href=""><img src="" title="source: imgur.com" /></a>
+    <a href=""><img src="https://i.imgur.com/xcb16pN.png" title="source: imgur.com" /></a>
 </section>
 
 ---
@@ -9,16 +9,16 @@
 <h2 align="center">Summary</h2>
 
 <p align="center">
-    <a href="#about">📙 About</a>
-    <a href="#preview">🖼️ Preview</a>
+    <a href="#about">📙 Sobre</a>
+    <a href="#preview">🖼️ Pré visualização</a>
     <a href="#layout">🎨 Layout</a>
-    <a href="#run">🚀 Run Project</a>
-    <a href="#technologies">💻 Technologies</a>
+    <a href="#run">🚀 Rodar a aplicação</a>
+    <a href="#technologies">💻 Tecnologias</a>
 </p>
 
 
 
-<H2 id="about">📙 About</H2>
+<H2 id="about">📙 Sobre</H2>
 
 Uma plataforma de eventos do Descomplica.
 
@@ -29,7 +29,7 @@ Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em u
 E graças ao Descomplica e seus professores incríveis passei em uma Federal 😊
 
 <p>
-    <h3><a href="https://eventodescomplica.willjpg.vercel.app/">Entre na Plataforma &rarr;</a></h3>
+    <h3><a href="https://eventodescomplica.willjpg.vercel.app/" target={'_blank'}>Entre na Plataforma &rarr;</a></h3>
 </p>
 
 
@@ -41,9 +41,18 @@ E graças ao Descomplica e seus professores incríveis passei em uma Federal �
 
 <H2 id="preview">🖼️ Preview</H2>
 
-<section align="center">
-    <img  alt="My Event website overview" src=""/>
-    <img  alt="My Event website overview" src=""/>
+### Desktop:
+<section  align="center">
+    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/PhY5Laf.png"/>
+    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/ZeS7toF.png"/>
+    
+</section>
+
+### Mobile:
+Nota: Está totalmente responsivo.
+<section  align="center">
+    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/E0dcFXR.png"/>
+    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/gBgKYBL.png"/>
     
 </section>
 
@@ -55,20 +64,12 @@ Você pode ver o layout da plataforma no Figma [aqui](https://www.figma.com/file
 
 
 ---
-<H2 id="run">🚀 Run Project</H2>
 
 
-From your terminal navigate to the project folder and run:
-
-```cl
-  npm install
-  npm run dev
-```
-
-<H2 id="technologies">💻 Technologies</H2>
+<H2 id="technologies">💻 Tecnologias</H2>
  
     
--  [X] React
+-  [X] ReactJs
 -  [X] Typescript
 -  [X] Tailwind CSS
 -  [X] Headless CMS (Content Management System) com graphcms
@@ -77,3 +78,19 @@ From your terminal navigate to the project folder and run:
 -  [X] Phosphor icon family (https://phosphoricons.com/)
 -  [X] Lib classnames
 -  [X] GraphQL-CodeGen (https://www.graphql-code-generator.com/)
+
+<H2 id="run">🚀 Rodar a aplicação</H2>
+
+```shell
+  git clone https://github.com/willjpg
+  
+  cd ignite-lab 
+  yarn or npm run dev
+  yarn dev or npm run dev
+  # after the app is running, you can acess it on the browser with the following link:
+  
+  # http://localhost:3000/
+```
+---
+
+  ### <p align="center"> Made by [Willian Ferreira](https://github.com/willjpg) 
