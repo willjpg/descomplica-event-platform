@@ -51,8 +51,8 @@ E graças ao Descomplica e seus professores incríveis passei em uma Federal �
 ### Mobile:
 Nota: Está totalmente responsivo.
 <section  align="center">
-    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/E0dcFXR.png"/>
-    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/gBgKYBL.png"/>
+    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/iyAXwVO.gif"/>
+    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/D0idFmC.gif"/>
     
 </section>
 
@@ -60,7 +60,7 @@ Nota: Está totalmente responsivo.
 
 <H2 id="layout">🎨 Layout</H2>
 
-Você pode ver o layout da plataforma no Figma [aqui](https://www.figma.com/file/ptjsbGNFiJPxI1wK5J0lOf/Plataforma-de-Evento-Descomplica?node-id=0%3A1). Pode ser que ainda não esteja na sua versão final hehe.
+Você pode ver o layout da plataforma no [Figma](https://www.figma.com/file/ptjsbGNFiJPxI1wK5J0lOf/Plataforma-de-Evento-Descomplica?node-id=0%3A1). Pode ser que ainda não esteja na sua versão final hehe.
 
 
 ---
