@@ -27,7 +27,7 @@ A ideia veio com a semana de imersão ReactJs no ignite lab da Rocketseat.
 Como estudei o ano de 2021 inteiro na plataforma do Descomplica para passar em uma universidade, gosto muito de todos os professores e todo o ecossistema deles. 
 Esse projeto foi uma forma de homenagem e aprendizado, me motivou muito mais construir e aperfeiçoar sendo algo com a cara deles.
 
-E graças ao Descomplica e seus professores incríveis passei em uma Federal. 😊
+E graças ao Descomplica e seus professores incríveis alcancei minha vaga em uma Universidade. 😊
 
 
 <p>
