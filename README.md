@@ -43,8 +43,8 @@ E graças ao Descomplica e seus professores incríveis passei em uma Federal �
 
 ### Desktop:
 <section  align="center">
-    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/PhY5Laf.png"/>
-    <img height="500px" alt="My Event website overview" src="https://i.imgur.com/ZeS7toF.png"/>
+    <img height="450px" alt="My Event website overview" src="https://i.imgur.com/PhY5Laf.png"/>
+    <img height="450px" alt="My Event website overview" src="https://i.imgur.com/ZeS7toF.png"/>
     
 </section>
 
