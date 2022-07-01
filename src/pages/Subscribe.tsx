@@ -67,11 +67,11 @@ export function Subscribe() {
             <p className="font-bold mt-4 text-gray-700 leading-relaxed">Em apenas uma semana você será integrado a metodologia descomplica com desafios e prática com questões dos principais vestibulares do país para conquistar a tão sonhada vaga.</p>
 
           </div>
-          <div className="pl-3 bg-black shadow-lg  rounded-3xl mb-8">
-            <div className="p-8 bg-white border border-gray-900 rounded-3xl mb-3 lg:p-8">
+          <div className="pl-2 bg-black shadow-lg  rounded-3xl mb-8">
+            <div className="p-7 bg-white border border-gray-900 rounded-3xl mb-3 lg:p-8">
             {!alreadySubscribe ? (
               <>
-              <strong className="text-2xl mb-4 block text-black">Inscreva-se gratuitamente</strong>
+              <strong className="text-2xl mb-5 block text-black">Inscreva-se gratuitamente</strong>
 
 
 
