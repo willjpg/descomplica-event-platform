@@ -67,26 +67,26 @@ export function Subscribe() {
             <p className="font-bold mt-4 text-gray-700 leading-relaxed">Em apenas uma semana você será integrado a metodologia descomplica com desafios e prática com questões dos principais vestibulares do país para conquistar a tão sonhada vaga.</p>
 
           </div>
-          <div className="pl-2 bg-black shadow-lg  rounded-3xl mb-8 ">
-            <div className="p-8 bg-gray-100 border border-gray-100 rounded-3xl mb-7 lg:p-8">
+          <div className="pl-3 bg-black shadow-lg  rounded-3xl mb-8">
+            <div className="p-8 bg-white border border-gray-900 rounded-3xl mb-3 lg:p-8">
             {!alreadySubscribe ? (
               <>
-              <strong className="text-2xl mb-6 block text-black">Inscreva-se gratuitamente</strong>
+              <strong className="text-2xl mb-4 block text-black">Inscreva-se gratuitamente</strong>
 
 
 
               <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
                 <input
-                  className="bg-gray-200 rounded-3xl px-5 h-14"
+                  className="bg-slate-200 rounded-full px-5 h-14 placeholder-gray-300"
                   type="text"
                   placeholder="Seu nome completo"
                   onChange={event => setName(event.target.value)}
                 />
 
                 <input
-                  className="bg-gray-200 rounded-3xl px-5 h-14"
+                  className="bg-slate-200 rounded-full px-5 h-14 placeholder-gray-300" 
                   type="email"
-                  placeholder="digite seu e-mail"
+                  placeholder="Digite seu e-mail"
                   onChange={event => setEmail(event.target.value)}
                 />
 
@@ -97,7 +97,7 @@ export function Subscribe() {
                   className="mt-4 bg-green-400 uppercase py-4 rounded-3xl font-bold text-sm hover:bg-black text-white transition-colors disabled:opacity-50"
                 >
 
-                  Garatir minha vaga
+                  Garantir minha vaga
 
                 </button>
 
