@@ -72,16 +72,16 @@ Você pode ver o layout da plataforma no [Figma](https://www.figma.com/file/ptjs
 
 <H2 id="technologies">💻 Tecnologias</H2>
  
-    
+-  [X] Vite    
 -  [X] ReactJs
 -  [X] Typescript
 -  [X] Tailwind CSS
--  [X] Headless CMS (Content Management System) com graphcms
--  [X] @apollo/client and Graphql
--  [X] svg2jsx para gerar um componente SVG (https://svg2jsx.com/)
+-  [X] Headless CMS (Content Management System) com Graphcms
+-  [X] Apollo client
+-  [X] GraphQL e [GraphQL-CodeGen](https://www.graphql-code-generator.com/)
 -  [X] Phosphor icon family (https://phosphoricons.com/)
 -  [X] Lib classnames
--  [X] GraphQL-CodeGen (https://www.graphql-code-generator.com/)
+-  [X] svg2jsx para gerar um componente SVG (https://svg2jsx.com/)
 
 <H2 id="run">🚀 Rodar a aplicação</H2>
 
@@ -98,4 +98,4 @@ Você pode ver o layout da plataforma no [Figma](https://www.figma.com/file/ptjs
 ```
 ---
 
-  ### <p align="center"> Made by [Willian Ferreira](https://github.com/willjpg) 
+  ### <p align="center"> Made by [Willian Ferreira](https://www.linkedin.com/in/willfdasilva/) 
