@@ -91,7 +91,7 @@ export function Video(props: VideoProps) {
 
                 <div className="gap-8 mt-20 flex flex-col lg:flex-shrink-0 xl:flex-row">
                     <a href="https://descomplica.com.br/" target={'_blank'}
-                    className="bg-white rounded overflow-hidden flex items-stretch gap-6 shadow-2xl shadow-gray-200  hover:bg-gray-400 transition-colors">
+                    className="bg-white rounded overflow-hidden flex items-stretch gap-6 shadow-lg shadow-gray-200  hover:bg-gray-400 transition-colors">
 
                         <div className="bg-green-400 p-8 flex items-center">
                             <FileArrowDown size={40} />
@@ -109,7 +109,9 @@ export function Video(props: VideoProps) {
                     </a>
 
 
-                    <a href="https://www.google.com.br/search?q=wallpaper+descomplica&ie=UTF-8&oe=" target={'_blank'} className="bg-white rounded overflow-hidden flex items-stretch  gap-6 shadow-2xl shadow-gray-200 hover:bg-gray-400 transition-colors">
+                    <a href="https://www.google.com.br/search?q=wallpaper+descomplica&ie=UTF-8&oe=" 
+                    target={'_blank'} 
+                    className="bg-white rounded overflow-hidden flex items-stretch  gap-6 shadow-lg shadow-gray-200 hover:bg-gray-400 transition-colors">
 
                         <div className="bg-green-400 p-8 flex items-center">
                             <Image size={40} />
