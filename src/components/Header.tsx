@@ -9,11 +9,13 @@ interface HeaderProps {
 
 export function Header({ isOpen, toggleSidebar }: HeaderProps){
     return(
-        <header className="flex w-full items-center justify-between border-b border-gray-200 bg-gray-100 px-6 py-2 lg:justify-center lg:px-0" >    
-            <Link to="/">
+        <header className="flex w-full items-center justify-between border-b border-gray-200 bg-gray-100 px-6 py-2 lg:justify-center lg:flex-auto" >  
+          
+            <Link className="flex max-h-14 mb-1" to="/">
         <Logo />
+        
       </Link>
-
+      
             <button
         onClick={toggleSidebar}
         className="flex items-center gap-2 lg:invisible lg:hidden"

@@ -94,7 +94,7 @@ export function Subscribe() {
 
                   type="submit"
                   disabled={loading}
-                  className="mt-4 bg-green-400 uppercase py-4 rounded-3xl font-bold text-sm hover:bg-black text-white transition-colors disabled:opacity-50"
+                  className="mt-4 bg-green-400 uppercase py-4 rounded-full font-bold text-sm hover:bg-black text-white transition-colors disabled:opacity-50"
                 >
 
                   Garantir minha vaga
@@ -109,7 +109,7 @@ export function Subscribe() {
                   Você já está dentro!
                 </span>
                 <button
-                  className="mt-4 h-14 rounded-3xl bg-green-400 py-4 text-sm font-bold uppercase text-gray-700 transition-colors hover:bg-black hover:text-white disabled:opacity-50"
+                  className="mt-4 h-14 rounded-full bg-green-400 py-4 text-sm font-bold uppercase text-gray-700 transition-colors hover:bg-black hover:text-white disabled:opacity-50"
                   onClick={() => navigate('/event/lesson/abertura-do-evento-desco-aprova')}
                 >
                   Acessar Aulas
@@ -134,10 +134,10 @@ export function Subscribe() {
       <div className="pl-8 w-full py-5 flex items-center justify-between bg-white border-t border-gray-400">
         
         <Logo/> 
-        <h1 className="pl-8 text-gray-400">Todos os direiros resevados
+        <h1 className="pl-8 text-gray-400">Todos os direiros resevados.
         </h1>
         <div>
-        <h1 className="pr-8 text-gray-400">Politicas de provacidade
+        <h1 className="pr-8 text-gray-400">Políticas de privacidade.
         </h1>
         </div>
         
